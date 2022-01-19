@@ -1,0 +1,32 @@
+<!--Ejercicio #3
+Escriba una función y llámela al hacer clic en un botón para mostrar una alerta con:
+
+1. El número de enlaces en la página.
+2. El primer enlace de la página.
+3. El último enlace de la página.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<button onclick="getAlert();">Dame alerta</button>
+    <h1>www.google.com</h1>
+    <h2>www.amazon.com</h2>
+    <h3>www.youtube.com</h3>
+    <script>
+    
+    	function getAlert(){
+        	var numElementos = document.getElementsByTagName("a");
+            alert(numElementos.length);
+            
+        }
+    
+    </script>
+    
+</body>
+</html>
